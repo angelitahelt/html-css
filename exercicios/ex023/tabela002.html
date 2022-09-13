@@ -30,6 +30,13 @@ thead ,tfoot {
    text-align: right;
 }
 
+caption {
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    background-color: lightblue;
+}
+
 
     </style>
 </head>
@@ -37,10 +44,13 @@ thead ,tfoot {
     <h1>Uso de Tabelas Grandes</h1>
 
     <table>
+
+        <caption>População das Unidades Federativas</caption>
+        
         <thead>
             <tr>
-                <th>Estado</th>   
-                <th>População</th> 
+                <th scope="col">Estado</th>   
+                <th scope="col" style="width:100px;">População</th> 
             </tr>
         </thead>       
 
@@ -80,8 +90,8 @@ thead ,tfoot {
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>210. 147.125</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td scope="row"><strong>210. 147.125</strong></td>
             </tr>
 
         </tfoot>
